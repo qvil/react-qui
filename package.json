@@ -6,7 +6,9 @@
   "scripts": {
     "start": "./node_modules/.bin/parcel src/docs/index.html",
     "build": "./node_modules/.bin/webpack --mode=production",
-    "build:docs": "./node_modules/.bin/parcel build src/docs/index.js -d dist/docs/"
+    "build:docs": "./node_modules/.bin/parcel build src/docs/index.js -d dist/docs/",
+    "example:none-react": "parcel examples/none-react/index.html",
+    "example:react": "cd examples/react && npm start"
   },
   "repository": {
     "type": "git",
