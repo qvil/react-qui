@@ -1,5 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+// import React from "react";
+// import ReactDOM from "react-dom";
+// "use strict";
+
+// const e = React.createElement;
 
 class App extends React.Component {
   render() {
