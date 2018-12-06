@@ -23,7 +23,8 @@
   "homepage": "https://github.com/qvil/react-qui#readme",
   "dependencies": {
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
