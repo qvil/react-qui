@@ -5,7 +5,12 @@ const StyledButton = styled.button`
   background-color: red;
 `;
 
-const Button = ({ text, children, ...rest }) => (
+export interface IButtonProps {
+  text: string;
+  children: any;
+}
+
+const Button = ({ text, children, ...rest }: IButtonProps) => (
   <StyledButton {...rest}>{children}</StyledButton>
 );
 
