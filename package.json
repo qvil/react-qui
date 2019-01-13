@@ -11,7 +11,9 @@
     "example:none-react": "parcel examples/none-react/index.html",
     "example:react": "cd examples/react && npm start",
     "watch": "npm-watch",
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "watch": {
     "build": "src/"
@@ -48,6 +50,10 @@
     "typescript": "^3.2.2",
     "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "@storybook/react": "^4.1.6",
+    "@storybook/addon-actions": "^4.1.6",
+    "@storybook/addon-links": "^4.1.6",
+    "@storybook/addons": "^4.1.6"
   }
 }
