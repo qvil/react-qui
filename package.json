@@ -3,6 +3,9 @@
   "version": "0.0.5",
   "description": "",
   "main": "./build/index.js",
+  "files": [
+    "build"
+  ],
   "types": "./build/index.d.ts",
   "scripts": {
     "start": "./node_modules/.bin/parcel src/docs/index.html",
