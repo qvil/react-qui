@@ -13,5 +13,3 @@ export interface IButtonProps {
 export const Button = ({ text, children, ...rest }: IButtonProps) => (
   <StyledButton {...rest}>{children}</StyledButton>
 );
-
-export default Button;
