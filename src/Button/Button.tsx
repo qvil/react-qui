@@ -10,7 +10,7 @@ export interface IButtonProps {
   children: any;
 }
 
-const Button = ({ text, children, ...rest }: IButtonProps) => (
+export const Button = ({ text, children, ...rest }: IButtonProps) => (
   <StyledButton {...rest}>{children}</StyledButton>
 );
 
