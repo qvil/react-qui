@@ -71,3 +71,6 @@ dist
 
 # build
 build
+
+# production
+storybook-static

@@ -1,26 +1,19 @@
 # React QUI
 
-Flexible React UI Library
+Flexible React UI Library.🎨
 
-# TODO
-
-- [x] webpack build setting
-- [ ] Example at none react environment
-- [x] npm deploy
-- [ ] Type Check(Typescript, Flow, Prop Types, etc)
+> Big thanks to [@dclark27](https://github.com/dclark27). I refer to [storybook-typescript-react-library](https://github.com/dclark27/storybook-typescript-react-library).
 
 # Install
 
-```sh
+```
 npm install
 ```
 
-# Start
+# Build
 
-## React example
-
-```sh
-npm start
+```
+npm run build
 ```
 
 # License
