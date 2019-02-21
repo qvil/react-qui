@@ -1,27 +1,16 @@
 {
   "name": "react-qui",
-  "version": "0.1.2",
-  "description": "Flexible React UI Library.🎨",
+  "version": "0.1.3",
+  "description": "Flexible React UI Library. 🎨",
   "main": "build/lib/index.js",
   "types": "build/lib/index.d.ts",
   "files": [
     "build/lib"
   ],
   "scripts": {
-    "start": "start-storybook",
-    "build": "npm run lint && npm run build-lib && build-storybook",
-    "build-lib-watch": "tsc -w",
-    "build-lib": "tsc && npm run copy-css-to-lib && npm run copy-svg-to-lib && npm run copy-png-to-lib && npm run copy-woff2-to-lib",
-    "storybook": "start-storybook -p 6006",
-    "test": "jest",
-    "test:coverage": "npm test -- --coverage",
-    "test:update": "npm test -- --u --coverage",
-    "build-storybook": "-c .storybook -o .out",
-    "copy-css-to-lib": "cpx \"./src/**/*.css\" ./build/lib",
-    "copy-woff2-to-lib": "cpx \"./src/**/*.woff2\" ./build/lib",
-    "copy-svg-to-lib": "cpx \"./src/**/*.svg\" ./build/lib",
-    "copy-png-to-lib": "cpx \"./src/**/*.png\" ./build/lib",
-    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'"
+    "start": "npm run dev",
+    "dev": "node src/index.js",
+    "test": "jest"
   },
   "watch": {
     "build": "src/"
@@ -30,51 +19,19 @@
     "type": "git",
     "url": "git+https://github.com/qvil/react-qui.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "javscript",
+    "react",
+    "ui",
+    "library",
+    "components"
+  ],
+  "author": "Taesu Hyeon",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/qvil/react-qui/issues"
   },
   "homepage": "https://github.com/qvil/react-qui#readme",
-  "dependencies": {
-    "@storybook/addon-actions": "^4.1.1",
-    "@storybook/addon-info": "^4.1.1",
-    "@storybook/addon-knobs": "^4.1.1",
-    "@storybook/addon-links": "^4.1.1",
-    "@storybook/addon-options": "^4.1.1",
-    "@storybook/react": "^4.1.1",
-    "@types/node": "^10.12.12",
-    "@types/react": "^16.7.13",
-    "@types/react-dom": "^16.0.11",
-    "@types/storybook-addon-jsx": "^5.4.0",
-    "@types/storybook__addon-actions": "^3.4.1",
-    "@types/storybook__addon-info": "^3.4.2",
-    "@types/storybook__addon-knobs": "^3.4.1",
-    "@types/storybook__addon-links": "^3.3.3",
-    "@types/storybook__react": "^4.0.0",
-    "awesome-typescript-loader": "^5.2.1",
-    "babel-loader": "^8.0.4",
-    "cpx": "^1.5.0",
-    "npm": "^6.4.1",
-    "react": "^16.6.3",
-    "react-docgen-typescript-loader": "^3.0.0",
-    "react-docgen-typescript-webpack-plugin": "^1.1.0",
-    "react-dom": "^16.6.3",
-    "typescript": "^3.2.1"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "@types/jest": "^23.3.10",
-    "@types/react-test-renderer": "^16.0.3",
-    "jest": "^23.6.0",
-    "react-test-renderer": "^16.6.3",
-    "ts-jest": "^23.10.5",
-    "tslint": "^5.11.0"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
