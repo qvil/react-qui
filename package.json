@@ -1,6 +1,6 @@
 {
   "name": "react-qui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Flexible React UI Library.🎨",
   "main": "build/lib/index.js",
   "types": "build/lib/index.d.ts",
