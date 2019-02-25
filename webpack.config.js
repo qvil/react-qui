@@ -1,21 +1,42 @@
+const path = require("path");
+const nodeExternals = require("webpack-node-externals");
+
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: path.resolve(__dirname, "src/components/index.js"),
   output: {
-    filename: "bundle.js",
-    path: __dirname + "/dist"
+    path: path.resolve(__dirname, "./build"),
+    filename: "index.js",
+    library: "",
+    libraryTarget: "commonjs"
   },
-
+  externals: [nodeExternals()],
   // Enable sourcemaps for debugging webpack's output.
-  devtool: "source-map",
+  // devtool: "source-map",
 
-  resolve: {
-    // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: [".ts", ".tsx", ".js", ".json"]
-  },
+  // resolve: {
+  //   // Add '.ts' and '.tsx' as resolvable extensions.
+  //   extensions: [".ts", ".tsx", ".js", ".json"]
+  // },
 
   module: {
     rules: [
       // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: "babel-loader",
+        options: {
+          presets: ["@babel/preset-env", "@babel/react"]
+        }
+      },
+      {
+        test: /\.jsx$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: "babel-loader",
+        options: {
+          presets: ["@babel/preset-env", "@babel/react"]
+        }
+      },
       { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
 
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.

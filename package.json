@@ -11,7 +11,7 @@
     "start": "npm run dev",
     "dev": "node src/index.js",
     "test": "jest",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --mode=production"
   },
   "watch": {
     "build": "src/"
@@ -40,11 +40,17 @@
     "react-dom": "^16.8.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
     "npm-watch": "^0.6.0",
     "source-map-loader": "^0.2.4",
     "typescript": "^3.3.3",
     "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-node-externals": "^1.7.2"
   }
 }
