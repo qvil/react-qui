@@ -8,7 +8,7 @@
     "build/lib"
   ],
   "scripts": {
-    "start": "npm run dev",
+    "start": "parcel docs/index.html",
     "dev": "node src/index.js",
     "test": "jest",
     "build": "webpack --mode=production"
@@ -36,6 +36,7 @@
   "dependencies": {
     "@types/react": "^16.8.4",
     "@types/react-dom": "^16.8.2",
+    "parcel-bundler": "^1.12.3",
     "react": "^16.8.2",
     "react-dom": "^16.8.2"
   },
