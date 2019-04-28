@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Button(props) {
-  return <button {...props}>{props.chilren}</button>;
+export default function Button({ children }, ...others) {
+  return <button {...others}>{children}</button>;
 }
