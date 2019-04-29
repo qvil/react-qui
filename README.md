@@ -8,10 +8,28 @@ Flexible React UI Library.🎨
 npm install
 ```
 
+# Development
+
+```
+npm start
+```
+
+or
+
+```
+npm run dev
+```
+
 # Build
 
 ```
 npm run build
+```
+
+# Check Docs
+
+```
+npm run docs
 ```
 
 # License

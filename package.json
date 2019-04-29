@@ -8,8 +8,9 @@
     "build/lib"
   ],
   "scripts": {
-    "start": "parcel docs/index.html",
+    "start": "npm run dev",
     "dev": "parcel src/index.html",
+    "docs": "parcel docs/index.html",
     "test": "jest",
     "build": "webpack --mode=production"
   },
@@ -36,9 +37,11 @@
   "dependencies": {
     "@types/react": "^16.8.4",
     "@types/react-dom": "^16.8.2",
+    "@types/styled-components": "^4.1.14",
     "parcel-bundler": "^1.12.3",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
